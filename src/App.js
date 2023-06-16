@@ -39,6 +39,13 @@ function App() {
           {error}
           </div>
       )}
+      {airQualityData && (
+        //Air Quality Card Componet
+        //Pollutam t Info
+        <>
+        
+        </>
+      )}
       </div>
     );
 }
