@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
+import CitySearch from './CitySearch';
 
 
 
@@ -18,15 +19,21 @@ function App() {
           setError(null)
         }else {
           setError("Sorry, we couldn't find the city you were looking for. Try another location or make sure spelling is correct.")
+          setAirQualityData(null)
         }
       }catch (error) {
         console.error('network error:', error)
+        setError('Sorry, something went wrong')
+        setAirQualityData(null)
         //set error state
         //set air quality data to nu ll
       }
     }
     return (
-      <h1>Hello Alex</h1>
+      <div>
+      <h1>Air Quality Index Checker</h1>
+      <CitySearch getAirQuality={getAirQuality}/> 
+      </div>
     );
 }
 
