@@ -11,5 +11,10 @@
 }
 
 body{
-    background-color: rgb(61, 231, 243);
+    background-color: rgb(61, 176, 243);
 }
+
+h1{
+    font-size: 3em;
+}
+
