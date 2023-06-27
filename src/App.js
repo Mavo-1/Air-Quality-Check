@@ -44,8 +44,7 @@ function App() {
           </div>
       )}
       {airQualityData && (
-        //Air Quality Card Componet
-        //Pollutam t Info
+       
         <>
         <AirQualityCard data={airQualityData}/>
         <PollutantInfo pollutant={airQualityData.dominentpol}/>
